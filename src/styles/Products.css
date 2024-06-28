@@ -1,0 +1,15 @@
+.products {
+    padding: 2rem;
+    background: #f9f9f9;
+  }
+  
+  .products h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .products p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  

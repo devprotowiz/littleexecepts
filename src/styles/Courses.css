@@ -1,0 +1,98 @@
+.courses {
+  padding: 2rem;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.courses h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.course {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.course-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 45%;
+  margin: 1rem;
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.course-content img {
+  width: 100%;
+  height: 350px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.course-content img:hover {
+  transform: scale(1.05);
+}
+
+.course-content .text {
+  text-align: justify;
+  padding: 1rem;
+}
+
+.course-content .text h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.course-content .text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.learn-more {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.learn-more:hover {
+  background-color: #0056b3;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 1024px) {
+  .course-content {
+    max-width: 90%;
+  }
+
+  .course-content .text h3 {
+    font-size: 1.6rem;
+  }
+
+  .course-content .text p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .course-content {
+    max-width: 100%;
+  }
+
+  .course-content .text h3 {
+    font-size: 1.4rem;
+  }
+
+  .course-content .text p {
+    font-size: 0.9rem;
+  }
+}

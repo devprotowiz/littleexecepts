@@ -1,0 +1,119 @@
+.why-choose-us {
+  padding: 2rem;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.why-choose-us h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  padding: 1rem;
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.left-image, .right-image {
+  width: 35%; /* Adjusted width for better alignment */
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.left-image {
+  margin-right: 1.5rem; /* Adjusted margin for better spacing */
+}
+
+.right-image {
+  margin-left: 1.5rem; /* Adjusted margin for better spacing */
+}
+
+.left-image:hover, .right-image:hover {
+  transform: scale(1.05);
+}
+
+.content .text {
+  flex: 1;
+  text-align: justify; /* Justified text */
+}
+
+.content .text h3 {
+  font-size: 1.8rem; /* Reduced font size */
+  margin-bottom: 1rem;
+}
+
+.content .text p {
+  font-size: 1.1rem; /* Reduced font size */
+  line-height: 1.6;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 1024px) {
+  .left-image, .right-image {
+    width: 40%;
+  }
+
+  .content .text h3 {
+    font-size: 1.6rem;
+  }
+
+  .content .text p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left-image, .right-image {
+    width: 80%;
+    margin: 1rem 0;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .content .text {
+    text-align: center;
+  }
+
+  .content .text h3 {
+    font-size: 1.4rem;
+  }
+
+  .content .text p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .content .text h3 {
+    font-size: 1.2rem;
+  }
+
+  .content .text p {
+    font-size: 0.8rem;
+  }
+}

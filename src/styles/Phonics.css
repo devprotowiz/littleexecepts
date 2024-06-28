@@ -1,0 +1,74 @@
+.phonics-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+    background-color: #f9f9f9;
+  }
+  
+  .course-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    width: 300px;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .course-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .course-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .course-details {
+    padding: 1rem;
+    text-align: left;
+  }
+  
+  .course-details p,
+  .course-details h4 {
+    margin: 0.5rem 0;
+  }
+  
+  .course-details ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .course-details ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .course-details ul li svg {
+    margin-right: 0.5rem;
+  }
+  
+  .icon {
+    color: #007BFF; /* Custom color for icons */
+  }
+  
+  .check-icon {
+    color: #28a745; /* Custom color for check icons */
+  }
+  
+  /* Media queries for responsive design */
+  @media (max-width: 768px) {
+    .course-card {
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .course-card {
+      width: 100%;
+    }
+  }
+  
